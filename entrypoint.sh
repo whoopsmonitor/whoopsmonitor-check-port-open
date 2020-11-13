@@ -4,7 +4,7 @@ set -uo pipefail
 WM_HOST=${WM_HOST}
 WM_PORT=${WM_PORT}
 
-nc -zw10 "${WM_HOST}" "$WM_PORT" > /dev/null 2>&1
+nc -zvw10 "${WM_HOST}" "$WM_PORT"
 
 RESULT="$?"
 
