@@ -1,10 +1,11 @@
 #!/bin/sh
+
 set -uo pipefail
 
 WM_HOST=${WM_HOST}
 WM_PORT=${WM_PORT}
 
-nc -zvw10 "${WM_HOST}" "$WM_PORT"
+nc -zvw10 "${WM_HOST}" "$WM_PORT" 2>&1
 
 RESULT="$?"
 
