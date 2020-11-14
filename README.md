@@ -1,6 +1,6 @@
 # whoopsmonitor-check-port-open
 
-Check if the port is open on remote server.
+Check if the port is open on remote server (with netcat).
 
 ## Environmental variables
 
